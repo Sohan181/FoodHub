@@ -1,0 +1,270 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  /* display: block; */
+  align-items: center;
+  top: 0px;
+  position: sticky;
+  margin: 4px 4px;
+  padding: 4px 4px;
+}
+div img {
+  padding: 8px 8px;
+  height: 40%;
+  width: 22%;
+}
+#logo img{
+  height: 100%;
+  width: 100%;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  top: 0px;
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.1;
+}
+#navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 6px 6px;
+}
+#navbar li {
+  /* display: block; */
+  font-size: 1.3rem;
+  margin: 3px 3px;
+}
+
+#navbar li a {
+  padding: 8px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  font-family: "Bree Serif", serif;
+}
+
+#navbar li a:hover {
+  color: black;
+  background-color: white;
+  font-size: 1.25rem;
+
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 326px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 135px;
+  margin-top: 1
+}
+#home::before {
+  content: "";
+  background: url("../img/background.jpg") no-repeat center center/cover;
+  background-size: 100% 100%;
+  position: absolute;
+  margin: 0px 5px;
+  height: 100%;
+  width: 99%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+#home h1 {
+  color: white;
+  text-align: center;
+  font-family: "Baloo Bhai 2", cursive;
+}
+#home p {
+  color: black;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Bree Serif", serif;
+}
+/* Our Services */
+#services {
+  /* display: flex; */
+  margin: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+#services .box {
+  border: 4px solid red;
+  border-radius: 3%;
+  background-color: rgb(238, 232, 232);
+  /* margin: 5px; */
+}
+#services .box img {
+  height: 70%;
+  width: 50%;
+  margin: 2px auto;
+  padding: 0;
+  /* display: block; */
+}
+#services .box p {
+  font-family: "Bree Serif", serif;
+}
+
+#services #first {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 48%;
+  float: left;
+  margin-bottom: 1.2rem;
+}
+#services #second {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 48%;
+  float: right;
+  margin-bottom: 1.2rem;
+}
+#services #third {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 48%;
+  float: left;
+  /* margin-bottom: 1.2rem; */
+}
+#services #fourth {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 48%;
+  float: right;
+  /* margin-bottom: 2rem; */
+}
+/* Partner Section */
+#partner-section {
+  height: 350px;
+  margin: 15px;
+  margin-top: 760px;
+  padding-top: 100px;
+}
+#partner-section::before {
+  content: "";
+  position: absolute;
+  background: url("../img/partners.jpg") no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 80%;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+#partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-item {
+  padding: 34px;
+}
+
+/* Contact Section */
+
+#contact {
+  margin: 5px;
+  margin-top: 150px;
+  position: relative;
+}
+#contact h1{
+  color: white;
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.9;
+  background: url("../img/contact.jpeg") no-repeat center/cover;
+}
+
+#contact-box {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea {
+  width: 90%;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  border-radius: 9px;
+}
+#contact-box form {
+  width: 40%;
+}
+#contact-box label {
+  font-size: 1.3rem;
+  color: white;
+  font-family: "Bree Serif", serif;
+}
+
+.subfooter {
+  color: white;
+  float: inline-end;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 5px 5px;
+  margin-top: -4px;
+}
+
+/* Utility Class */
+.center {
+  text-align: center;
+}
+.h-primary {
+  font-size: 3.8rem;
+  padding: 12px;
+  font-family: "Bree Serif", serif;
+}
+.h-secondary {
+  font-size: 2.3rem;
+  padding: 12px;
+  font-family: "Bree Serif", serif;
+}
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: tomato;
+  color: white;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn:hover{
+  font-size: 1.4rem;
+  background-color: rgb(219, 81, 57);
+}
+
+/* Let's make our site Responsive now */
+/* mediaqueries */
+

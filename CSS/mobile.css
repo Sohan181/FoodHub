@@ -1,0 +1,120 @@
+/* Navigation
+#navbar {
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+
+/* Home section */
+/* #home{
+    height: 370px; 
+    padding: 3px 28px;
+}
+
+#home::before{
+    height: 480px; 
+}
+
+#home p{
+    font-size: 13px;
+}
+
+/* Services section  */
+/* #services{
+    flex-direction: column;
+}
+
+#services .box { 
+    padding: 14px;
+    margin: 2px 0px; 
+    margin-bottom: 20px;
+} */
+
+/* Partner section */
+/* #partners{
+    flex-wrap: wrap;
+}
+
+#partners img{
+    width: 66px;
+    padding: 6px;
+    height: auto;
+} */
+
+/* Utility classes */
+/* .h-primary{
+    font-size:26px;
+}
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}  */
+
+@media only screen and (max-width: 1120px) {
+    #home {
+        margin-bottom: -8px;
+        margin-top: -12px;
+    }
+    .h-primary {
+        font-size: 3.3rem;
+        padding-top: 1.5rem;
+    }
+    #partner-section::before {
+        height: 110%;
+        
+    }
+    #contact{
+        margin-top: 30px;
+    }
+    .formbtn{
+        font-size: 100%;
+    }
+}
+@media only screen and (max-width: 940px) {
+    .h-primary{
+        font-size: 2.8rem;
+    }
+    #home{
+        height: 345px;
+    }
+    #contact{
+        margin-top: 70px;
+    }
+}
+@media only screen and (max-width: 865px) {
+    .h-primary{
+        font-size: 2.4rem;
+    }
+    
+}
+@media only screen and (max-width: 800px) {
+    .h-primary{
+        font-size: 1.8rem;
+    }
+    #navbar li a{
+        font-size: 1rem;
+    }
+    .btn{
+        font-size: 0.8rem;
+    }
+    .formbtn{
+        font-size: 0.8rem;
+    }
+    
+}
+@media only screen and (max-width: 735px) {
+    .partner-item img{
+        height: 7.5rem;
+        width: 7.5rem;
+    }
+}
+@media only screen and (max-width: 725px) {
+    .partner-item img{
+        height: 7.5rem;
+        width: 7.5rem;
+    }
+}
